@@ -49,7 +49,7 @@ queryCtrl.controller('queryCtrl', function($scope, $log, $http, $rootScope, geol
             favlang: $scope.formData.favlang,
             reqVerified: $scope.formData.verified
         };
-
+        
         // Post the queryBody to the /query POST route to retrieve the filtered results
         $http.post('/query', queryBody)
 
