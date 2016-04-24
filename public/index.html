@@ -10,19 +10,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css"/>
     <link rel="stylesheet" href="./assets/css/style.css"/>
-    <!-- Holder JS -->
-    <script src="../node_modules/holderjs/holder.js"></script>
-    <!-- Google Maps API -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSy9uWhzGErfJUxSTRNx16b8YCgYlI7Vc"></script>
-    <!-- Modernizr -->
-    <script src="../node_modules/modernizr/bin/modernizr"></script>
-    <!-- JS Source -->
-    <script src="../node_modules/jquery/dist/jquery.js"></script>
-    <script src="../node_modules/angular/angular.js"></script>
-    <script src="../node_modules/angular-route/angular-route.js"></script>
-    <script src="../node_modules/angularjs-geolocation/dist/angularjs-geolocation.min.js"></script>
 </head>
-<body>
+<body ng-controller="addCtrl">
 <div class="container">
     <div class="header">
         <ul class="nav nav-pills pull-right">
@@ -93,7 +82,7 @@
                             <input type="text" class="form-control" id="verified" placeholder= "Nope (Thanks for spamming my map...)" ng-model="formData.htmlverified" readonly>
                         </div>
                         <!-- Submit button. Note that its tied to createUser() function from addCtrl. Also note ng-disabled logic which prevents early submits.  -->
-                        <button type="submit" class="btn btn-danger btn-block" ng-disabled="addForm.$invalid">Submit</button>
+                        <button type="submit" class="btn btn-danger btn-block" ng-click="createUser()" ng-disabled="addForm.$invalid">Submit</button>
                     </form>
                 </div>
             </div>
@@ -106,5 +95,25 @@
             <a href="https://scotch.io/">App Tutorial</a> | <a href="https://github.com/afhaque/MeanMapAppV2.0">Github Repo</a></p>
     </div>
 </div>
+
+<!-- Begin Scripts -->
+
+<!-- Angular -->
+<script src="js/app.js"></script>
+<script src="js/addCtrl.js"></script>
+<!-- Holder JS -->
+<script src="../node_modules/holderjs/holder.js"></script>
+<!-- Google Maps API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSy9uWhzGErfJUxSTRNx16b8YCgYlI7Vc"></script>
+<!-- Modernizr -->
+<script src="../node_modules/modernizr/bin/modernizr"></script>
+<!-- JS Source -->
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+<script src="../node_modules/angular/angular.js"></script>
+<script src="../node_modules/angular-route/angular-route.js"></script>
+<script src="../node_modules/angularjs-geolocation/dist/angularjs-geolocation.min.js"></script>
+
+<!-- End Scripts -->
+
 </body>
 </html>

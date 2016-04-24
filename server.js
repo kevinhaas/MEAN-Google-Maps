@@ -2,6 +2,8 @@
 // -----------------------------------------
 var express = require('express');
 var mongoose = require('mongoose');
+
+// process.env.port is an env variable
 var port = process.env.port || 3000;
 var morgan = require('morgan');
 var bodyParser = require('body-parser');
@@ -25,7 +27,7 @@ app.use(methodOverride());
 
 // Routes
 // ------------------------------------------
-// require('./app/routes.js')(app);
+require('./public/assets/js/routes.js')(app);
 
 // Listen
 // ------------------------------------------
