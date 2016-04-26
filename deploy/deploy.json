@@ -1,0 +1,1 @@
+{"appurl":"kevhaas.com","name":"MEAN-map-app","start":"node meanmap.js","port":"80","path":"/var/www","nginx":"/etc/nginx/sites-enabled","url":"https://github.com/kevinhaas/MEAN-map-app.git","server":"kevo@boosh.kevhaas.com","sshport":"52420"}
