@@ -4,7 +4,8 @@ var express = require('express');
 var mongoose = require('mongoose');
 
 // process.env.port is an env variable
-var PORT = process.env.PORT || 13375;
+var PORT = process.env.PORT || 3003;
+
 var morgan = require('morgan');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
@@ -13,7 +14,7 @@ var app = express();
 // Express Config
 // -----------------------------------------
 // Sets connection to MongoDB
-mongoose.connect("mongodb://localhost/MeanMapApp");
+mongoose.connect("mongodb://kevo:asd@127.0.0.1:27017/scotch_users");
 
 // Loggin and Parsing
 app.use(express.static(__dirname + '/public')); // sets static file location to public
@@ -31,5 +32,5 @@ require('./public/assets/js/routes.js')(app);
 
 // Listen
 // ------------------------------------------
-app.listen(port);
-console.log('App Listening on port ' + port);
+app.listen(PORT);
+console.log('App Listening on port ' + PORT);
