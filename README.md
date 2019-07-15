@@ -10,14 +10,7 @@
 * MongoDB
 * Express
 * Angular
-* Node.js<br />
-<br />
+* Node.js
 * Google Maps
 * Geolocation
 * Bootstrap
-
-#### Server-side:
-* Ubuntu 14.04
-* Nginx
-* PM2
-* NVM
